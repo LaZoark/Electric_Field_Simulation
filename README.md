@@ -1,6 +1,5 @@
 # Electric_Field_Simulation
-![formula](https://render.githubusercontent.com/render/math?math=\sin)
-<img src="https://render.githubusercontent.com/render/math?math=">
+
 ### 前言
 原本想說用「斜率場」來畫電力線，但光靠斜率場實在太不精確，也無法對應實際的數學意義，因此決定根據公式來撰寫電場模擬。
 大部分數學原理及程式碼都是參考網路上的資源。
@@ -14,7 +13,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 ```
 
-## 下列方法所使用公式為 <img src="https://render.githubusercontent.com/render/math?math=\vec{E}=k{\frac{Q}{r^3}}\vec{r}">
+## 下列方法所使用公式為 <img src="https://render.githubusercontent.com/render/math?math=\Large\vec{E}=k{\frac{Q}{r^3}}\vec{r}">
 
 ```python
 def E(q, r0, x, y):
@@ -24,7 +23,7 @@ def E(q, r0, x, y):
 
 ```
 
-* `np.hypot` 即是 $ \sqrt {(x^2 + y^2)} $
+* `np.hypot` 即是 <img src="https://render.githubusercontent.com/render/math?math=\sqrt {(x^2 %2B y^2)}">
 
 
 ```python
@@ -51,7 +50,7 @@ for i in range(nq):
 ```
 
 `charges`這個list物件所append的東西是:
-$$\large [正負電荷(q) ,  \cos \frac {2 \pi i} {nq} ,  \sin \frac {2 \pi i} {nq}  ] $$
+[正負電荷(q) ,<img src="https://render.githubusercontent.com/render/math?math=\large\cos \frac {2 \pi i} {nq}"> ,<img src="https://render.githubusercontent.com/render/math?math=\large\sin \frac {2 \pi i} {nq}">]
 也是決定電荷位置的關鍵!
 
 ## 先繪製出場(field)
@@ -165,7 +164,7 @@ plt.show()
 ![png](output_15_0.png)
 
 
-## 下列方法所使用公式為  $ \vec {E} = - \nabla {V} $
+## 下列方法所使用公式為  <img src="https://render.githubusercontent.com/render/math?math=\Large \vec {E} = - \nabla {V}">
 
 
 ```python
@@ -219,7 +218,7 @@ plt.show()
 ![png](output_17_0.png)
 
 
-### 若要使電荷分佈於上下兩端，可交換$\sin \frac {2 \pi i}{np}$和$\cos \frac {2 \pi i}{np}$的位置
+### 若要使電荷分佈於上下兩端，可交換<img src="https://render.githubusercontent.com/render/math?math=\large \sin \frac {2 \pi i}{np}">和<img src="https://render.githubusercontent.com/render/math?math=\large \cos \frac {2 \pi i}{np}">的位置
 如下方程式
 
 
