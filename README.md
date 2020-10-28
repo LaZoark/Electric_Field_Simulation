@@ -1,4 +1,6 @@
 # Electric_Field_Simulation
+![formula](https://render.githubusercontent.com/render/math?math=\sin)
+<img src="https://render.githubusercontent.com/render/math?math=">
 ### 前言
 原本想說用「斜率場」來畫電力線，但光靠斜率場實在太不精確，也無法對應實際的數學意義，因此決定根據公式來撰寫電場模擬。
 大部分數學原理及程式碼都是參考網路上的資源。
@@ -12,8 +14,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 ```
 
-## 下列方法所使用公式為 $ \vec{E} = k{\frac {Q} {r^3}}\vec{r}$
-
+## 下列方法所使用公式為 <img src="https://render.githubusercontent.com/render/math?math=\vec{E}=k{\frac{Q}{r^3}}\vec{r}">
 
 ```python
 def E(q, r0, x, y):
