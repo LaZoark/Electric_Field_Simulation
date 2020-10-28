@@ -45,8 +45,8 @@ for q, pos in charges:
 ax.set_xlabel('$x$')
 ax.set_ylabel('$y$')
 ax.set_xlim(-3, 3)
-ax.set_ylim(-3, 3)
-ax.set_aspect('equal')
+ax.set_ylim(-3, 3)      #line density
+ax.set_aspect('auto')
 plt.show()
 
 
@@ -65,8 +65,8 @@ for i in range(nq):
         q = 1
     else:
         q = -1
-    charges.append((q, (np.cos(2 * np.pi * i / nq), np.sin(2 * np.pi * i / nq))))
-    
+    charges.append((q, (np.sin(2 * np.pi * i / nq), np.cos(2 * np.pi * i / nq))))
+    ''' sin and cos decide where the charges were placed '''
 U_array = np.zeros((nx, ny))    #set empty to '0'(or something)
 for charge in charges:
     delta_U = U(*charge, x=X, y=Y)
@@ -92,6 +92,6 @@ ax.set_xlabel('$x$')
 ax.set_ylabel('$y$')
 ax.set_xlim(-2, 2)
 ax.set_ylim(-2, 2)
-ax.set_aspect('equal')
-ax.set_title('E=-grad(U)')
+ax.set_aspect('auto')
+ax.set_title('$ \\vec{E} =- \\nabla V $')
 plt.show()
