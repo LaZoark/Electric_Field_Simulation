@@ -83,7 +83,6 @@ ax.streamplot(x, y, Ex, Ey, color=color, linewidth=1, cmap=plt.cm.inferno,
 
 ![png](output_10_1.png)
 
-* 若想讓圖框比例自動調配可以將`ax.set_aspect('equal')`中的`'equal'`改成`'auto'`
 
 ## 再繪製出點電荷
 
@@ -103,7 +102,7 @@ ax.set_aspect('equal')
 plt.show()
 ```
 
-
+* 若想讓圖框比例自動調配可以將`ax.set_aspect('equal')`中的`'equal'`改成`'auto'`
 
 ## 完整程式
 
