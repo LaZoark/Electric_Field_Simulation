@@ -35,7 +35,7 @@ X, Y = np.meshgrid(x, y)
 ```
 
 ## 決定電荷(charges)數量
-設定`np`數量以決定模電荷子數量
+設定`nq`數量以決定模電荷子數量
 
 
 ```python
